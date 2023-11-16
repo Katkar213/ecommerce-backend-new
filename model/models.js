@@ -33,7 +33,7 @@ const userSchema = mongoose.Schema({
     product: String,
     download_url: String,
     material: String,
-    price: String,
+    price: Number,
     RAM: String,
     ROM: String,
     expandableMemory: String,
