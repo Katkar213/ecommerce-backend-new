@@ -52,6 +52,7 @@ const userSchema = mongoose.Schema({
       energyRating: String,
       battery: String,
       operatingSystem: String, 
+      quantity:Number
   });
 
 //   const ketan=userSchema(
