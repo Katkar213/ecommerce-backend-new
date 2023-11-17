@@ -1,6 +1,6 @@
 
 const {global}=require("../components/DummyData")
-
+const secrete_key = "ketan";
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const {Registerdata2 } = require("../model/models");
@@ -33,35 +33,31 @@ const Register = async (req,res)=>{
 // login......
 // login......
 
-const Login = async (req, res) => {
-  try {
-    const { data } = req.body;
-    const user = await Registerdata2.findOne({ email: data.email });
-
-    if (user) {
-      const isPasswordValid = await bcrypt.compare(data.password, user.password);
-
-      if (!isPasswordValid) {
-        return res.status(401).json({ message: "Password is invalid" });
+const Login =async (req,res)=>{
+  const logData = req.body
+  const logDb = await Registerdata2.find({})
+  
+  const LogDetails = logDb.find(item=>{
+      if(logData.email === item.email)
+      {
+          return item
       }
-  
-      const token = jwt.sign({ userId: user._id }, "ketan", { expiresIn: "2d" });
-  
-      return res
-        .status(200)
-        .json({ message: "User successfully logged In", email: user.email, token });
-     
-    }
-    else{
-        res.send({message:"Unauthorized user"})
-    }
-   } catch (error) {
-      console.log(error);
-      return res.status(500).json({ message: "Internal Server Error, try to solve it" });
-    }
-   
+  })
 
-  
+  if(LogDetails){
+      const encrypt = bcrypt.compareSync(logData.password,LogDetails.password)
+      if(encrypt){
+          const token = jwt.sign({userEmail:logData.email},secrete_key,{expiresIn:"7d"})
+          console.log({message:"User is successfully Login",name:LogDetails.name,token:token});
+          return res.send({message:"User is successfully Login",name:LogDetails.name,token:token})
+      }
+      else{
+          return res.send({message:" Password is wrong"})
+      }
+  }
+  else{
+      return res.send({message:"Enter valid Email email"})
+  }
 }
 
 
