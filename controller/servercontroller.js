@@ -8,7 +8,7 @@ const adddata=async (req,res)=>{
     res.send(data)
  }
  catch(err){
-    console.log("data not grtting",err)
+    console.log("data not getting",err)
  }
   
 

@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const userRegister = new mongoose.Schema({
+const userRegister =mongoose.Schema({
   name: {
     type: String,
   },
@@ -55,16 +55,13 @@ const userSchema = mongoose.Schema({
       quantity:Number
   });
 
-//   const ketan=userSchema(
-//     {
 
-//     }
-//   )
 
 
 
 const Product=mongoose.model("ProductData",userSchema)
-module.exports={Product,userRegister}
+const Registerdata2=mongoose.model("Registerationdata", userRegister)
+module.exports={Product,Registerdata2}
 
 
 

@@ -3,59 +3,69 @@ const {global}=require("../components/DummyData")
 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { userRegister } = require("../model/models");
+const {Registerdata2 } = require("../model/models");
 
 // register...........
 
 const Register = async (req, res) => {
   try {
-    const { email, password } = req.body;
-    // const Userexist = await Register.findOne({ email });
-    // if (Userexist) {
-    //   return res.status(400).json({ message: "User already exist" });
-    // }
-    const hashedPassword = await bcrypt.hash(password, 10);
-    // const newUser = new Register({ email, password: hashedPassword });
-    // await newUser.save();
-    const token = jwt.sign({ userId: newUser._id }, "secret1", {
+    const data = req.body;
+    const hashedPassword = await bcrypt.hash(data.password, 10);
+    data.password = hashedPassword;
+    const duplicatefound=Registerdata2.findOne({email:data.email})
+    if(duplicatefound){
+      return res.send({ message: "User registered successfully" });
+    }
+    await Registerdata2.create(data);
+
+    const token = jwt.sign({ userId: data.email }, "ketan", {
       expiresIn: "1d",
     });
-    return res
-      .status(201)
-      .json({ message: "User registered successfully", token, email });
+
+    return res.send({ message: "User registered successfully", token });
   } catch (error) {
-    console.log(error);
-    return res.status(500).json({ message: "Internal Server Error" });
+    console.log(error); 
+    return res.send({ message: "Internal Server Error", error: error });
   }
+  
 };
+
 
 
 // login......
+// login......
 
 const Login = async (req, res) => {
-
   try {
-    const { email, password } = req.body;
-    const user = await Register.findOne({ email });
-    if (!user) {
-      return res.status(404).json({ message: "User not found" });
+    const { data } = req.body;
+    const user = await Registerdata2.findOne({ email: data.email });
+
+    if (user) {
+      const isPasswordValid = await bcrypt.compare(data.password, user.password);
+
+      if (!isPasswordValid) {
+        return res.status(401).json({ message: "Password is invalid" });
+      }
+  
+      const token = jwt.sign({ userId: user._id }, "ketan", { expiresIn: "2d" });
+  
+      return res
+        .status(200)
+        .json({ message: "User successfully logged In", email: user.email, token });
+     
     }
-    const isPasswordValid = await bcrypt.compare(password, user.password);
-    if (!isPasswordValid) {
-      return res.status(401).json({ message: "Password is inValid" });
+    else{
+        res.send({message:"Unauthorized user"})
     }
-    const token = jwt.sign({ userId: user._id }, "secret", { expiresIn: "2d" });
-    return res
-      .status(200)
-      .json({ message: "User  successfully logged In", email, token });
+   } catch (error) {
+      console.log(error);
+      return res.status(500).json({ message: "Internal Server Error, try to solve it" });
+    }
+   
 
+  
+}
 
-
-  } catch (error) {
-    console.log(error);
-    return res.status(500).json({ message: "Internal Server Error try to solve it" });
-  }
-};
 
 
 
