@@ -7,28 +7,26 @@ const {Registerdata2 } = require("../model/models");
 
 // register...........
 
-const Register = async (req, res) => {
-  try {
-    const data = req.body;
-    const hashedPassword = await bcrypt.hash(data.password, 10);
-    data.password = hashedPassword;
-    const duplicatefound=Registerdata2.findOne({email:data.email})
-    if(duplicatefound){
-      return res.send({ message: "User registered successfully" });
-    }
-    await Registerdata2.create(data);
+const Register = async (req,res)=>{
+  const details = req.body 
+  const salt = 10
+  const regData = await Registerdata2.findOne({email:details.email})
 
-    const token = jwt.sign({ userId: data.email }, "ketan", {
-      expiresIn: "1d",
-    });
-
-    return res.send({ message: "User registered successfully", token });
-  } catch (error) {
-    console.log(error); 
-    return res.send({ message: "Internal Server Error", error: error });
+  if(regData){
+      return res.send({message:"User is already registered"})
   }
-  
-};
+  const hashPassword = bcrypt.hashSync(details.password,salt) 
+  const Obj={
+      username:details.username,
+      email:details.email,
+      password:hashPassword
+  }
+  await Registerdata2.create(Obj) //creating db for registered user
+
+  // const token = jwt.sign({userEmail:details.email},secretKey)
+
+  return res.send({message:"User is successfully Registered"})
+}
 
 
 
