@@ -9,6 +9,7 @@ const {Registerdata2 } = require("../model/models");
 
 const Register = async (req,res)=>{
   const details = req.body 
+  // console.log(details)
   const salt = 10
   const regData = await Registerdata2.findOne({email:details.email})
 
@@ -17,11 +18,12 @@ const Register = async (req,res)=>{
   }
   const hashPassword = bcrypt.hashSync(details.password,salt) 
   const Obj={
-      username:details.username,
+      name:details.name,
       email:details.email,
       password:hashPassword
   }
-  await Registerdata2.create(Obj) //creating db for registered user
+  console.log(Obj)
+  await Registerdata2.create(Obj) 
 
   // const token = jwt.sign({userEmail:details.email},secretKey)
 
@@ -38,12 +40,16 @@ const Login =async (req,res)=>{
   const logDb = await Registerdata2.find({})
   
   const LogDetails = logDb.find(item=>{
+
       if(logData.email === item.email)
       {
+        
           return item
       }
+
   })
 
+    console.log(LogDetails)
   if(LogDetails){
       const encrypt = bcrypt.compareSync(logData.password,LogDetails.password)
       if(encrypt){
