@@ -4,6 +4,7 @@ const secrete_key = "ketan";
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const {Registerdata2 } = require("../model/models");
+const {Product}=require("../model/models")
 
 // register...........
 
@@ -73,6 +74,31 @@ const globalData=(req,res)=>{
     res.send(global);
     }
 
+    const search = async (req, res) => {
+        const { type, category, model } = req.query;
+      
+        const queryObj = {};
+      
+        if (category) {
+          queryObj.category = { $regex: category, $options: "i" };
+        }
+      
+        if (model) {
+          queryObj.model = { $regex: model, $options: "i" };
+        }
+      
+        if (type) {
+          queryObj.type = { $regex: type, $options: "i" };
+        }
+      
+        try {
+          const searchedData = await Product.find(queryObj);
+          res.send(searchedData);
+        } catch (error) {
+          console.error("Error fetching data:", error);
+          res.status(500).send("Internal Server Error");
+        }
+      };
   
     
 
@@ -80,4 +106,4 @@ const globalData=(req,res)=>{
 
 
 
-module.exports={ globalData,Login,Register};
+module.exports={ globalData,Login,Register,search};

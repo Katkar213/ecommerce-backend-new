@@ -1,6 +1,6 @@
 
 
-constglobal=[
+const global=[
 {
 id:"1",
 model:"DellXPS13",
