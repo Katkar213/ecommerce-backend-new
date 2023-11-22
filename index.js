@@ -36,7 +36,7 @@ app.post("/checkout",async(req,res)=>{
     payment_method_types:["card"],
      line_items:lineItems,
     mode:"payment",
-    success_url:"http://localhost:3000/success",
+    success_url:"https://euphonious-salmiakki-b13f02.netlify.app/",
     cancel_url:"http://localhost:3000/cancel",
 
 
