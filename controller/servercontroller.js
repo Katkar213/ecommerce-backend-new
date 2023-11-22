@@ -22,4 +22,6 @@ const finddata=async (req,res)=>{
 
 
 
+
+
 module.exports={adddata,finddata}
