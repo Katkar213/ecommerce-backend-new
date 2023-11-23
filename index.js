@@ -37,7 +37,7 @@ app.post("/checkout",async(req,res)=>{
      line_items:lineItems,
     mode:"payment",
     success_url:"https://euphonious-salmiakki-b13f02.netlify.app/",
-    cancel_url:"http://localhost:3000/cancel",
+    cancel_url:"https://ecommerce-backend-new.onrender.com/api/cart",
 
 
 })
