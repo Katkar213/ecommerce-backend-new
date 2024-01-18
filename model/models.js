@@ -61,7 +61,8 @@ const userSchema = mongoose.Schema({
 
 const Product=mongoose.model("ProductData",userSchema)
 const Registerdata2=mongoose.model("Registerationdata", userRegister)
-module.exports={Product,Registerdata2}
+const addcartdata=mongoose.model("addcartdata",userSchema)
+module.exports={Product,Registerdata2,addcartdata}
 
 
 

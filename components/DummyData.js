@@ -1146,6 +1146,7 @@ quantity:1
 {
 id:"70",
 category:"fashion",
+model:"Men'sLeatherJacket",
 product:"Men'sLeatherJacket",
 image:"https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:2999,
@@ -1160,6 +1161,7 @@ quantity:1
 {
 id:"71",
 category:"fashion",
+model:"Men'sClassicOxfordShirt",
 product:"Men'sClassicOxfordShirt",
 image:"https://images.pexels.com/photos/12793815/pexels-photo-12793815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:899,
@@ -1174,6 +1176,7 @@ quantity:1
 {
 id:"72",
 category:"fashion",
+model:"Men'sSneakers",
 product:"Men'sSneakers",
 image:"https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:1499,
@@ -1187,6 +1190,7 @@ quantity:1
 {
 id:"73",
 category:"fashion",
+model:"Women'sCrossbodyBag",
 product:"Women'sCrossbodyBag",
 image:"https://images.pexels.com/photos/167703/pexels-photo-167703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:799,
@@ -1199,6 +1203,7 @@ quantity:1
 {
 id:"74",
 category:"fashion",
+model:"Men'sFormalSuit",
 product:"Men'sFormalSuit",
 image:"https://images.pexels.com/photos/4963371/pexels-photo-4963371.jpeg?auto=compress&cs=tinysrgb&w=600",
 price:4999,
@@ -1212,6 +1217,7 @@ quantity:1
 {
 id:"75",
 category:"fashion",
+model:"Women'sAnkleBoots",
 product:"Women'sAnkleBoots",
 image:"https://media.istockphoto.com/id/627429942/photo/womens-shoes.jpg?s=2048x2048&w=is&k=20&c=5gHrfiW8Aj_C3MlqA9uAsvRnEaJW7f5Mwx2vNhIqFq4=",
 price:2199,
@@ -1225,6 +1231,7 @@ quantity:1
 {
 id:"76",
 category:"fashion",
+model:"Men'sPoloShirt",
 product:"Men'sPoloShirt",
 image:"https://neemans.com/cdn/shop/products/ND-RelivePolo-ClassicBlackb_1000x.jpg?v=1684570237",
 price:699,
@@ -1238,6 +1245,7 @@ quantity:1
 {
 id:"77",
 category:"fashion",
+model:"Women'sSunglasses",
 product:"Women'sSunglasses",
 image:"https://images.unsplash.com/photo-1547194444-a435dc9fc2aa?q=80&w=1967&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 price:499,
@@ -1249,6 +1257,7 @@ quantity:1
 {
 id:"78",
 category:"fashion",
+model:"Men'sCargoShorts",
 product:"Men'sCargoShorts",
 image:"https://contents.mediadecathlon.com/p2481093/3ff85525603376cba609c96248875e40/p2481093.jpg?format=auto&quality=70&f=1024x0",
 price:899,
@@ -1261,6 +1270,7 @@ quantity:1
 {
 id:"79",
 category:"fashion",
+model:"Women'sCardiganSweater",
 product:"Women'sCardiganSweater",
 image:"https://images.unsplash.com/photo-1631541909061-71e349d1f203?q=80&w=1905&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 price:1199,
@@ -1273,6 +1283,7 @@ quantity:1
 {
 id:"80",
 category:"fashion",
+model:"Men'sLeatherWallet",
 product:"Men'sLeatherWallet",
 image:"https://images.unsplash.com/photo-1606503825008-909a67e63c3d?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 price:799,
@@ -1284,6 +1295,7 @@ quantity:1
 {
 id:"81",
 category:"fashion",
+model:"Men'sClassicLeatherBelt",
 product:"Men'sClassicLeatherBelt",
 image:"https://img3.exportersindia.com/product_images/bc-full/2022/8/10456857/mens-classic-leather-belt-1660712423-6493121.jpeg",
 price:899,
@@ -1301,6 +1313,7 @@ quantity:1
 {
 id:"82",
 category:"grocery",
+model:"OrganicApples",
 product:"OrganicApples",
 image:"https://freshindiaorganics.com/cdn/shop/files/Untitleddesign_16.png?v=1686739530",
 price:99,
@@ -1314,6 +1327,7 @@ quantity:1
 {
 id:"83",
 category:"grocery",
+model:"BasmatiRice",
 product:"BasmatiRice",
 image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/1fe016dc-f8ca-4934-94ad-1a72eea9b142_425x425.jpg",
 price:349,
@@ -1327,6 +1341,7 @@ quantity:1
 {
 id:"84",
 category:"grocery",
+model:"FreshMilk",
 product:"FreshMilk",
 image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/1000644_1_425x425.jpg",
 price:42,
@@ -1340,6 +1355,7 @@ quantity:1
 {
 id:"85",
 category:"grocery",
+model:"WholeWheatBread",
 product:"WholeWheatBread",
 image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/653cc3d9-9b19-49b4-9162-bdebb1f8ebe5_425x425.jpg",
 price:25,
@@ -1353,6 +1369,7 @@ quantity:1
 {
 id:"86",
 category:"grocery",
+model:"FreshEggs",
 product:"FreshEggs",
 image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/80dbaa87-f158-42e8-963a-3e72ed005729_425x425.jpg",
 price:48,
@@ -1366,6 +1383,7 @@ quantity:1
 {
 id:"87",
 category:"grocery",
+model:"Pasta",
 product:"Pasta",
 image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/1174253_1_425x425.jpg",
 price:49,
@@ -1379,6 +1397,7 @@ quantity:1
 {
 id:"88",
 category:"grocery",
+model:"FreshOranges",
 product:"FreshOranges",
 image:"https://www.bigbasket.com/media/uploads/p/l/20000910_12-fresho-orange-imported.jpg?tr=w-640,q=80",
 price:60,
@@ -1392,6 +1411,7 @@ quantity:1
 {
 id:"89",
 category:"grocery",
+model:"GroundCoffee",
 product:"GroundCoffee",
 image:"https://www.bigbasket.com/media/uploads/p/l/40161608-5_2-continental-malgudi-filter-coffee-pouch-8020.jpg?tr=w-640,q=80",
 price:199,
@@ -1405,6 +1425,7 @@ quantity:1
 {
 id:"90",
 category:"grocery",
+model:"CannedTomatoes",
 product:"CannedTomatoes",
 image:"https://www.bigbasket.com/media/uploads/p/l/303001_4-spc-diced-tomatoes-onion-garlic-basil.jpg?tr=w-640,q=80",
 price:30,
@@ -1418,6 +1439,7 @@ quantity:1
 {
 id:"91",
 category:"grocery",
+model:"BlackBeans",
 product:"BlackBeans",
 image:"https://www.bigbasket.com/media/uploads/p/l/30000108_10-bb-royal-chawli-lobia-black-eye.jpg?tr=w-640,q=80",
 price:35,
@@ -1431,6 +1453,7 @@ quantity:1
 {
 id:"92",
 category:"grocery",
+model:"Honey",
 product:"Honey",
 image:"https://www.bigbasket.com/media/uploads/p/l/40295344-4_7-dabur-honey-100-pure-no-sugar-adulteration.jpg?tr=w-640,q=80",
 price:75,
@@ -1444,6 +1467,7 @@ quantity:1
 {
 id:"93",
 category:"grocery",
+model:"Potatoes",
 product:"Potatoes",
 image:"https://www.bigbasket.com/media/uploads/p/l/10000159_27-fresho-potato.jpg?tr=w-640,q=80",
 price:30,
@@ -1683,6 +1707,7 @@ quantity:1
 {
 id:"110",
 name:"WirelessEarbuds",
+model:"WirelessEarbuds",
 category:"accessories",
 type:"Audio",
 image:"https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -1695,6 +1720,7 @@ quantity:1
 id:"111",
 name:"Smartwatch",
 category:"accessories",
+model:"Smartwatch",
 type:"Wearable",
 image:"https://images.pexels.com/photos/3783416/pexels-photo-3783416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:4499,
@@ -1705,6 +1731,7 @@ quantity:1
 {
 id:"112",
 name:"GamingMouse",
+model:"GamingMouse",
 category:"accessories",
 type:"Gaming",
 image:"https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -1717,6 +1744,7 @@ quantity:1
 id:"113",
 name:"LaptopBackpack",
 category:"accessories",
+model:"LaptopBackpack",
 type:"Bags",
 image:"https://images.pexels.com/photos/9407366/pexels-photo-9407366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:899,
@@ -1728,6 +1756,7 @@ quantity:1
 id:"114",
 name:"WirelessChargingPad",
 category:"accessories",
+model:"WirelessChargingPad",
 type:"Charging",
 image:"https://images.pexels.com/photos/7742588/pexels-photo-7742588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:1499,
@@ -1739,6 +1768,7 @@ quantity:1
 id:"115",
 name:"BluetoothSpeaker",
 category:"accessories",
+model:"BluetoothSpeaker",
 type:"Audio",
 image:"https://images.pexels.com/photos/9767549/pexels-photo-9767549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:2799,
@@ -1750,6 +1780,7 @@ quantity:1
 id:"116",
 name:"Webcam",
 category:"accessories",
+model:"Webcam",
 type:"Accessories",
 image:"https://images.pexels.com/photos/7172701/pexels-photo-7172701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:999,
@@ -1761,6 +1792,7 @@ quantity:1
 id:"117",
 name:"ExternalHardDrive",
 category:"accessories",
+model:"ExternalHardDrive",
 type:"Storage",
 image:"https://images.pexels.com/photos/4633278/pexels-photo-4633278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:3299,
@@ -1772,6 +1804,7 @@ quantity:1
 id:"118",
 name:"USB-CHub",
 category:"accessories",
+model:"USB-CHub",
 type:"Accessories",
 image:"https://images.pexels.com/photos/7742589/pexels-photo-7742589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:899,
@@ -1783,6 +1816,7 @@ quantity:1
 id:"119",
 name:"ScreenProtector",
 category:"accessories",
+model:"ScreenProtector",
 type:"Protection",
 image:"https://images.pexels.com/photos/3999536/pexels-photo-3999536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:299,
@@ -1794,6 +1828,7 @@ quantity:1
 id:"120",
 name:"WirelessMouse",
 category:"accessories",
+model:"WirelessMouse",
 type:"Gaming",
 image:"https://images.pexels.com/photos/7006952/pexels-photo-7006952.jpeg?auto=compress&cs=tinysrgb&w=600",
 price:1799,
@@ -1805,6 +1840,7 @@ quantity:1
 id:"121",
 name:"PhoneCase",
 category:"accessories",
+model:"PhoneCase",
 type:"Protection",
 image:"https://images.pexels.com/photos/5531122/pexels-photo-5531122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:499,
@@ -1827,7 +1863,6 @@ quantity:1
 id:"123",
 category:"crousal",
 download_url:"https://img.freepik.com/free-vector/happy-diwali-sale-banner-with-discount-details-pink-background_1017-39845.jpg?w=1380&t=st=1699535609~exp=1699536209~hmac=ba57d51bf523d8d30997cd223b3a5c913513c2c76c5e4429501c66fbba769eea",
-
 quantity:1
 },
 {
@@ -1850,7 +1885,6 @@ category:"home",
 model:"Sony55-inch4KSmartTV",
 image:"https://d2xamzlzrdbdbn.cloudfront.net/products/c65b6ac9-3d4c-465c-8fd7-afe7cef689fc23091042.jpg",
 price:56999,
-
 type:"4KLEDSmartTV",
 size:"55inches",
 resolution:"4KUltraHD",
@@ -1925,6 +1959,7 @@ quantity:1
 {
 id:"131",
 category:"home",
+model:"Men'sSneakers",
 product:"Men'sSneakers",
 image:"https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 price:1499,
@@ -1938,6 +1973,7 @@ quantity:1
 {
 id:"133",
 category:"home",
+model:"Women'sSunglasses",
 product:"Women'sSunglasses",
 image:"https://images.unsplash.com/photo-1547194444-a435dc9fc2aa?q=80&w=1967&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 price:499,
